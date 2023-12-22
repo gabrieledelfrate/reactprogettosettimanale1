@@ -1,24 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './Components/Header';
+import TVShowsSection from './Components/MySecondBar';
+import TrendingCarousel from './Components/MyCarousel';
+import TrendingCarousel2 from './Components/MyCarousel2';
+import TrendingCarousel3 from './Components/MyCarousel3'
+import Footer from './Components/Footer'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="bg-dark">
+      <header>
+          <Header />
+        </header>
+        <main>
+          <TVShowsSection />
+          <TrendingCarousel />
+          <TrendingCarousel2 />
+          <TrendingCarousel3 />
+        </main>
+        <footer>
+        <Footer />
+        </footer>
+
+</div>
   );
 }
 
