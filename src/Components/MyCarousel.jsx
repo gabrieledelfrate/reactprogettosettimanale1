@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Carousel, Modal } from 'react-bootstrap';
+import { Carousel, Modal, Button, Form } from 'react-bootstrap';
 import axios from 'axios';
 
 const TrendingCarousel = () => {
@@ -26,8 +26,10 @@ const TrendingCarousel = () => {
 
   const [showModal, setShowModal] = useState(false);
   const [comments, setComments] = useState([]);
+  const [selectedMovie, setSelectedMovie] = useState(null);
 
   const handleImageClick = (movieId) => {
+    setSelectedMovie(movieId);
     const config = {
       headers: {
         Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTg1OTdjY2I5ODkwODAwMTg0ODg3NmMiLCJpYXQiOjE3MDMyNTM5NjQsImV4cCI6MTcwNDQ2MzU2NH0.L19PiEdWEHhQr4ibETR46bhBNToBgd0z0rxYZEir7Sc'
@@ -37,6 +39,30 @@ const TrendingCarousel = () => {
       .then(response => {
         setComments(response.data);
         setShowModal(true);
+      })
+      .catch(error => {
+        console.error('Errore nella richiesta API:', error);
+      });
+  };
+
+  const [newComment, setNewComment] = useState('');
+
+  const handleAddComment = (movieId) => {
+    const commentData = {
+      comment: newComment,
+      rate: 5,
+      elementId:`${movieId}`,
+    };
+    const config = {
+      headers: {
+        Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTg1OTdjY2I5ODkwODAwMTg0ODg3NmMiLCJpYXQiOjE3MDMyNTM5NjQsImV4cCI6MTcwNDQ2MzU2NH0.L19PiEdWEHhQr4ibETR46bhBNToBgd0z0rxYZEir7Sc'
+      }
+    };
+
+    axios.post(`https://striveschool-api.herokuapp.com/api/comments/`, commentData, config)
+      .then(response => {
+        setComments([...comments, response.data]);
+        setNewComment('');
       })
       .catch(error => {
         console.error('Errore nella richiesta API:', error);
@@ -96,6 +122,15 @@ const TrendingCarousel = () => {
           {comments.map((comment, index) => (
             <p key={index}>{comment.comment}</p>
           ))}
+          <Form>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+              <Form.Label>Nuovo commento</Form.Label>
+              <Form.Control as="textarea" rows={3} value={newComment} onChange={(e) => setNewComment(e.target.value)} />
+            </Form.Group>
+            <Button variant="primary" onClick={() => handleAddComment(selectedMovie)}>
+              Aggiungi commento
+            </Button>
+          </Form>
         </Modal.Body>
       </Modal>
     </div>
