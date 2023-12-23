@@ -15,51 +15,51 @@ const Footer = () => {
             <a className="text-secondary" href="https://www.youtube.com/channel/UCi_T2R1AzOCun4-PI4Or2ng" target="_blank" rel="noopener noreferrer"><Youtube className="m-2"/></a>
             </div>
             <div className="container py-4 fs-6">
-            <div class="row">
-                <div class="col-md-3">
+            <div className="row">
+                <div className="col-md-3">
                     <a class="text-secondary text-decoration-none fs-6" href="#" target="_blank" rel="noopener noreferrer">Audio and Subtitles</a>
                 </div>
-                <div class="col-md-3">
-                    <a class="text-secondary text-decoration-none fs-6" href="#" target="_blank" rel="noopener noreferrer">Media Center</a>
+                <div className="col-md-3">
+                    <a className="text-secondary text-decoration-none fs-6" href="#" target="_blank" rel="noopener noreferrer">Media Center</a>
                 </div>
-                <div class="col-md-3">
-                    <a class="text-secondary text-decoration-none fs-6" href="#" target="_blank" rel="noopener noreferrer">Privacy</a>
+                <div className="col-md-3">
+                    <a className="text-secondary text-decoration-none fs-6" href="#" target="_blank" rel="noopener noreferrer">Privacy</a>
                 </div>
-                <div class="col-md-3">
-                    <a class="text-secondary text-decoration-none fs-6" href="#" target="_blank" rel="noopener noreferrer">Contact Us</a>
-                </div>
-                </div>
-            <div class="row">
-                <div class="col-md-3">
-                    <a class="text-secondary text-decoration-none fs-6" href="#" target="_blank" rel="noopener noreferrer">Audio Description</a>
-                </div>
-                <div class="col-md-3">
-                    <a class="text-secondary text-decoration-none fs-6" href="#" target="_blank" rel="noopener noreferrer">Investor Relations</a>
-                </div>
-                <div class="col-md-3">
-                    <a class="text-secondary text-decoration-none fs-6" href="#" target="_blank" rel="noopener noreferrer">Legal Notices</a>
+                <div className="col-md-3">
+                    <a className="text-secondary text-decoration-none fs-6" href="#" target="_blank" rel="noopener noreferrer">Contact Us</a>
                 </div>
                 </div>
-            <div class="row">
-                <div class="col-md-3">
-                    <a class="text-secondary text-decoration-none fs-6" href="#" target="_blank" rel="noopener noreferrer">Help Center</a>
+            <div className="row">
+                <div className="col-md-3">
+                    <a className="text-secondary text-decoration-none fs-6" href="#" target="_blank" rel="noopener noreferrer">Audio Description</a>
                 </div>
-                <div class="col-md-3">
-                    <a class="text-secondary text-decoration-none fs-6" href="#" target="_blank" rel="noopener noreferrer">Jobs</a>
+                <div className="col-md-3">
+                    <a className="text-secondary text-decoration-none fs-6" href="#" target="_blank" rel="noopener noreferrer">Investor Relations</a>
                 </div>
-                <div class="col-md-3">
-                    <a class="text-secondary text-decoration-none fs-6" href="#" target="_blank" rel="noopener noreferrer">Cookie Preferences</a>
+                <div className="col-md-3">
+                    <a className="text-secondary text-decoration-none fs-6" href="#" target="_blank" rel="noopener noreferrer">Legal Notices</a>
                 </div>
                 </div>
-            <div class="row">
-                <div class="col-md-3">
-                    <a class="text-secondary text-decoration-none fs-6" href="#" target="_blank" rel="noopener noreferrer">Gift Cards</a>
+            <div className="row">
+                <div className="col-md-3">
+                    <a className="text-secondary text-decoration-none fs-6" href="#" target="_blank" rel="noopener noreferrer">Help Center</a>
                 </div>
-                <div class="col-md-3">
-                    <a class="text-secondary text-decoration-none fs-6" href="#" target="_blank" rel="noopener noreferrer">Terms of Use</a>
+                <div className="col-md-3">
+                    <a className="text-secondary text-decoration-none fs-6" href="#" target="_blank" rel="noopener noreferrer">Jobs</a>
                 </div>
-                <div class="col-md-3">
-                    <a class="text-secondary text-decoration-none fs-6" href="#" target="_blank" rel="noopener noreferrer">Corporate Information</a>
+                <div className="col-md-3">
+                    <a className="text-secondary text-decoration-none fs-6" href="#" target="_blank" rel="noopener noreferrer">Cookie Preferences</a>
+                </div>
+                </div>
+            <div className="row">
+                <div className="col-md-3">
+                    <a className="text-secondary text-decoration-none fs-6" href="#" target="_blank" rel="noopener noreferrer">Gift Cards</a>
+                </div>
+                <div className="col-md-3">
+                    <a className="text-secondary text-decoration-none fs-6" href="#" target="_blank" rel="noopener noreferrer">Terms of Use</a>
+                </div>
+                <div className="col-md-3">
+                    <a className="text-secondary text-decoration-none fs-6" href="#" target="_blank" rel="noopener noreferrer">Corporate Information</a>
                 </div>
             </div>
             </div>
