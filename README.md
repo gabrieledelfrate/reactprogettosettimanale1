@@ -68,3 +68,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+1 . Iinterfaccia grafica e galleria dei film (almeno 3 categorie):
+   Le 3 gallerie film funzionano, complete di hover. 
+2 . Commenti:
+    Il get dei commenti funziona, il post anche e non necessita di aggiornamento pagina.
+3 . Ricerca (alla pressione del tasto enter):
+    La search bar a scomparsa funziona, recupera i dati da omdb. Per questioni di tempo non sono riuscito a fare di meglio che inserire i risultati in un modale, privi di foto e altri dati all'infuori del titolo.
+
+Nel complesso i components sono oggettivamente un pò disordinati. Ho preferito testare il tutto all'interno dei singoli components in questa prima fase, senza fare import di diversi components. Volevo poi suddividere il tutto ma non riesco per questioni di tempo. Lo farò comunque nei prossimi giorni!
