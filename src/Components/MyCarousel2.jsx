@@ -75,7 +75,7 @@ const TrendingCarousel2 = () => {
   
   return (
     <div className="movie-gallery mx-md-5 mb-5 mt-4">
-       <h5 className="text-light mt-2 mb-2">Harry Potter</h5>
+       <h5 className="text-light mt-2 mb-2">Star Wars</h5>
       <Carousel id="trending-now" controls={true}>
         <Carousel.Item>
           <div className="movie-row">
